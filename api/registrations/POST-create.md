@@ -68,6 +68,7 @@
 
 | Request body | DB column / value |
 |------|------|
+| id | `registrations.id` |
 | course_id | `courses.id` |
 | user_id | `users.id` |
 
@@ -85,6 +86,7 @@
 | `id` | `UUID` | PK, not null | Уникальный идентификатор |
 | `course_id` | `UUID` | not null | Уникальный идентификатор курса |
 | `user_id` | `UUID` | not null | Уникальный идентификатор пользователя |
+| `start_date` |`DATE`| not null | Дата старта курса |
 
 ## 8. HTTP status codes
 
@@ -110,7 +112,8 @@ Content-Type: application/json
 
 {
     "course_id": "550e8400-e29b-41d4-a716-446655440000",
-    "user_id": "990e8400-e29b-41d4-a716-446655440011"
+    "user_id": "990e8400-e29b-41d4-a716-446655440011",
+    "start_date": "2026-10-07"
 }
 ```
 
@@ -121,7 +124,8 @@ Content-Type: application/json
   "success": true,
   "data": {
     "course_id": "550e8400-e29b-41d4-a716-446655440000",
-    "user_id": "990e8400-e29b-41d4-a716-446655440011"
+    "user_id": "990e8400-e29b-41d4-a716-446655440011",
+    "start_date": "2026-10-07"
   },
   "errorMessage": null
 }
@@ -137,7 +141,7 @@ Authorization: Bearer <access_token>
 Content-Type: application/json
 
 {
-  "title": ""
+  "course_id": "550e8400-e29b-41d4-a716-446655440000"
 }
 ```
 

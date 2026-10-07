@@ -66,7 +66,7 @@
 
 | Path param | DB column / value |
 |------|------|
-| registration_id | `registration_id` |
+| registration_id | `id` |
 
 ## 6. Logging requirements
 
