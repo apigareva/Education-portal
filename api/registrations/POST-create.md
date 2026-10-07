@@ -22,6 +22,7 @@
 |------|------|------|------|
 | Authorization | STRING | Yes | Bearer access-токен авторизации (`Bearer <access_token>`) |
 | Content-Type | STRING | Yes | `application/json` |
+| Idempotency-Key | STRING | Yes | Уникальный ключ идемпотентности для предотвращения дублирования записи |
 
 ### 2.2 Query params
 
@@ -109,6 +110,7 @@
 POST /api/v1/registrations
 Authorization: Bearer <access_token>
 Content-Type: application/json
+Idempotency-Key: 444e8400-e29b-41d4-a716-446655442222
 
 {
     "course_id": "550e8400-e29b-41d4-a716-446655440000",
@@ -139,6 +141,7 @@ Content-Type: application/json
 POST /api/v1/registrations
 Authorization: Bearer <access_token>
 Content-Type: application/json
+Idempotency-Key: 444e8400-e29b-41d4-a716-446655442222
 
 {
   "course_id": "550e8400-e29b-41d4-a716-446655440000"
@@ -163,6 +166,7 @@ Content-Type: application/json
 POST /api/v1/registrations
 Authorization: Bearer <access_token>
 Content-Type: application/json
+Idempotency-Key: 444e8400-e29b-41d4-a716-446655442222
 
 {
     "course_id": "550e8400-e29b-41d4-a716-446655440000",
@@ -188,6 +192,7 @@ Content-Type: application/json
 POST /api/v1/registrations
 Authorization: Bearer <access_token>
 Content-Type: application/json
+Idempotency-Key: 444e8400-e29b-41d4-a716-446655442222
 
 {
     "course_id": "550e8400-e29b-41d4-a716-446655440000",
@@ -213,6 +218,7 @@ Content-Type: application/json
 POST /api/v1/registrations
 Authorization: Bearer <access_token>
 Content-Type: application/json
+Idempotency-Key: 444e8400-e29b-41d4-a716-446655442222
 
 {
     "course_id": "550e8400-e29b-41d4-a716-446655440000",
@@ -238,6 +244,7 @@ Content-Type: application/json
 POST /api/v1/registrations
 Authorization: Bearer <access_token>
 Content-Type: application/json
+Idempotency-Key: 444e8400-e29b-41d4-a716-446655442222
 
 {
     "course_id": "550e8400-e29b-41d4-a716-446655440000",
